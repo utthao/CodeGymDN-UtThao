@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTH-8">
+    <title>Bài tập ứng dụng máy tính</title>
+</head>
+<body>
+    <h2>Caculator</h2>
+    The first number:<br>
+         <input type ="number" id="theFirstnumber"></input></br>
+    The second number:<br>
+         <input type ="number" id="theSecondnumber"></input></br>
+</br>
+    <button type="button"  onclick="addition()">Addition(+)
+    </button> 
+    <button type="button" onclick="subTraction()">Subtraction(-)
+    </button> 
+    <button type="button" onclick="multi()">Multiplication(x)
+    </button> 
+    <button type="button" onclick="div()">Div(/)
+    </button>  
+    Result is <span id="result"></span> 
+    <script>
+        function addition()
+        {
+            var theFirstnumber = parseInt(document.getElementById("theFirstnumber").value);
+            var theSecondnumber = parseInt(document.getElementById("theSecondnumber").value);
+            var sum = theFirstnumber + theSecondnumber;
+            document.getElementById("result").innerHTML = sum;
+        }
+        function subTraction()
+        {
+            var theFirstnumber = parseInt(document.getElementById("theFirstnumber").value);
+            var theSecondnumber = parseInt(document.getElementById("theSecondnumber").value);
+            var sub = theFirstnumber - theSecondnumber;
+            document.getElementById("result").innerHTML = sub;
+        }
+        function multi()
+        {
+            var theFirstnumber = parseInt(document.getElementById("theFirstnumber").value);
+            var theSecondnumber = parseInt(document.getElementById("theSecondnumber").value);
+            var mul = theFirstnumber * theSecondnumber;
+            document.getElementById("result").innerHTML = mul;
+        }
+        function div()
+        {
+            var theFirstnumber = parseInt(document.getElementById("theFirstnumber").value);
+            var theSecondnumber = parseInt(document.getElementById("theSecondnumber").value);
+            var chia = theFirstnumber / theSecondnumber;
+            document.getElementById("result").innerHTML = chia;
+        }
+    </script>
+</body>
+</html>
