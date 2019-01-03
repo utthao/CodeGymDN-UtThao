@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bài thực hành kiểm tra Username-Password</title>
+</head>
+
+<body>
+    <script>
+        var username = prompt("Who's there");
+        var password = prompt('Password?');
+        if (username == 'Admin' && password == 'TheMaster') {
+            alert(' Welcome ');
+        } else if (username == null || password == null) {
+            alert(' Canceled ');
+        } else {
+            alert("I don't know you and Wrong password");
+        }
+    </script>
+</body>
+
+</html>
