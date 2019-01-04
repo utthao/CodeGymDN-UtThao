@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bài thực hành if lồng nhau Good_Fast_Cheap</title>
+</head>
+
+Lựa chọn:<br />
+<label><input id="good" value="GOOD" type="checkbox" onclick="good()">GOOD</label> <br />
+<label><input id="fast" value="FAST" type="checkbox" onclick="fast()">FAST</label> <br />
+<label><input id="cheap" value="CHEAP" type="checkbox" onclick="cheap()">CHEAP</label> <br />
+
+<script>
+    function good() {
+        var isGood = document.getElementById("good").checked;
+        var isFast = document.getElementById("fast").checked;
+        if (isGood && isFast) {
+            document.getElementById("cheap").checked = false;
+        }
+    }
+    function fast() {
+        var isFast = document.getElementById("fast").checked;
+        var isCheap = document.getElementById("cheap").checked;
+        if(isFast && isCheap) {
+            document.getElementById("good").checked = false;
+        }
+            }
+    function cheap() {
+        var isCheap = document.getElementById("cheap").checked;
+        var isGood = document.getElementById("good").checked;
+        if(isGood && isCheap) {
+            document.getElementById("fast").checked = false;s
+    }
+}
+</script>
+
+</html>
