@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tính hoa hồng </title>
+</head>
+<script>
+    var valueMatHang1 = parseInt(prompt("Nhập doanh thu mặt hàng 1"));
+    var valueMatHang2 = parseInt(prompt("Nhập doanh thu mặt hàng 2"));
+    var sum = (valueMatHang1 + valueMatHang2);
+    document.write("Tổng doanh thu là" + sum);
+    function hoaHong() {
+        var hoaHong1;
+        if (sum >= 100000) {
+            hoaHong1 = sum * 10 / 100;
+            document.write("Hoa hồng bạn nhận được là" + hoaHong1);
+        } else {
+            hoaHong1 = sum * 5 / 100;
+        }
+    }
+</script>
+
+</html>

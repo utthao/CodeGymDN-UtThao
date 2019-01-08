@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Giải Phương trình bậc hai</title>
+</head>
+<script>
+    var a = parseInt(prompt("Nhập số nguyên a ="));
+    var b = parseInt(prompt("Nhập số nguyên b ="));
+    var c = parseInt(prompt("Nhập số nguyên c ="));
+    var delta, x1, x2;
+    if(a==0) {
+        if(b==0) {
+            if(c==0) {
+                document.write("Phương trình có vô số nghiệm");
+            } else document.write("Phương trình vô nghiệm");
+        } else {
+            x1=parseFloat((-b)/c);
+            document.write("Phương trình có nghiệm duy nhất x =" + x1);
+        }
+    } else {
+        delta = b*b - 4*a*c;
+        if(delta < 0) {
+            document.write("Phương trình vô nghiệm");
+        } else if(delta == 0) {
+            x1= (-b)/(2*a);
+            document.write("Phương trình có nghiệm kép x1 = x2 =" + x1);
+        } 
+        if(delta > 0) {
+            x1=(-b + Math.sqrt(delta))/(2*a);
+			x2=(-b - Math.sqrt(delta))/(2*a);
+			document.write("Phương trình có hai nghiệm phân biệt là : " + x1 + x2);
+        }
+    } 
+
+</script>
+
+</html>

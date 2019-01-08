@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài Tập tìm số lớn nhất</title>
+</head>
+<script>
+    var theFirstNumber = parseInt(prompt("Nhập số nguyên thứ nhất = "));
+    var theSecondNumber = parseInt(prompt("Nhập số nguyên thứ hai= "));
+    var theThirtNumber = parseInt(prompt("Nhập số nguyên thứ ba = "));
+    var max = theFirstNumber;
+    if(max < theSecondNumber) {
+        max = theSecondNumber;
+        
+    }
+    if (max < theThirtNumber) {
+        max = theThirtNumber;
+        
+    }
+    document.write("Số lớn nhất là" + max);
+</script>
+</html>

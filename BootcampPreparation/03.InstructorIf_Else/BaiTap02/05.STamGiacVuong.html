@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Diện tích tam giác vuông</title>
+</head>
+<script>
+    var edge1 = parseInt(prompt("Nhập cạnh kề thứ nhất = "));
+    var edge2 = parseInt(prompt("Nhập cạnh kề thứ hai = "));
+    var s;
+    if (edge1 > 0 && edge2 > 0) {
+        s = edge1 * edge2 / 2;
+        document.write("Diện tích tam giác trên là " + s);
+    } else {
+        document.write("Mời nhập lại cạnh");
+    }
+</script>
+
+</html>
